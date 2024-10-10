@@ -1,5 +1,5 @@
 const { body } = require('express-validator');
-const prism = require('../../prisma/client')
+const prisma = require('../../prisma/client')
 
 const validateUser = [
     body('name').notEmpty().withMessage('Name is required'),
